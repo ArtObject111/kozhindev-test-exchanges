@@ -1,0 +1,5 @@
+.preloaderBlock {
+    border: 0px solid;
+    display: flex;
+    justify-content: center;
+}

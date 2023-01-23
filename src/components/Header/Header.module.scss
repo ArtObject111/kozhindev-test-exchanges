@@ -1,0 +1,113 @@
+.headerWrapper {
+  height: 100px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  //background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  opacity: 100%;
+  width: 100%;
+  //grid-area: h;
+  //background-color: blueviolet;
+  margin-bottom: 5px;
+  .textLogoWrapper {
+    background-color: #5008a8;
+    width: 700px;
+    position: absolute;
+    top: 0px;
+    padding: 25px;
+    border-radius: 0 0 40px 40px;
+    .textLogo{
+      color: orange;
+      font-family: "OCR A Extended";
+      font-size: 30px;
+      padding: 15px;
+      border-bottom: 2px solid orange;
+    }
+  }
+}
+
+.header img {
+  position: absolute;
+  top: 15px;
+  left: 70px;
+  width: 60px;
+  margin: 5px;
+}
+
+.loginBlock {
+  position: absolute;
+  right: 70px;
+  top: 15px;
+  display: inline-flex;
+  float: right;
+  margin: 15px;
+  //border: 1px solid;
+  align-items: center;
+  /*label{
+    //border: 1px solid;
+    background-color: #f3f3f3;
+    height: 65px;
+    width: 100px;
+    margin-left: 10px;
+  }*/
+  .digitTimeWrapper {
+    position: relative;
+    margin-left: 5px;
+    color: #eeeeee;
+    .digitTime{
+      margin: 0 3px;
+      display: inline-flex;
+      border: 1px solid white;
+      border-radius: 7px;
+      padding: 8px 5px;
+      background-color: #eeeeee;
+      color: black;
+      box-shadow: 5px 5px 15px #2a2b2a;
+
+    }
+  }
+}
+
+.loginBlock span {
+  float: right;
+  margin-top: 15%;
+  margin-right: 30px;
+  font-size: large;
+  color: white;
+  border: 0px solid;
+}
+
+.loginBlock a {
+  color: white;
+}
+
+.loginBlock img {
+  border-radius: 50%;
+}
+
+.updateDataButton {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  background-image: url("../../assets/images/update_icon3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid lightgrey;
+  background-color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px #2a2b2a;
+
+  &:hover {
+    transition: 0.3s;
+    transform: rotate(-90deg)
+  }
+
+}

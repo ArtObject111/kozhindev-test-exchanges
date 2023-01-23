@@ -1,0 +1,296 @@
+.contentWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 0px solid greenyellow;
+}
+
+.contentBlockWrapper {
+  position: relative;
+  margin-top: 30px;
+  padding: 0px;
+  width: 80%;
+  //border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  //background-color: #d993e6;
+}
+
+//new
+.tableBlock {
+  background-color: #e8cfff;
+  padding: 30px;
+  border: 1px solid;
+  border-radius: 40px;
+
+  .findInputBlock {
+    display: flex;
+    width: 500px;
+    height: 35px;
+
+
+
+      input {
+        border-color: #c384fa;
+        border-radius: 5px 5px 0 0;
+        &:focus {
+          outline: none;
+        }
+      }
+      .findIcon {
+        margin-left: 10px;
+        width: 30px;
+        height: 30px;
+        background-image: url("../../../assets/images/find_icon4.png");
+      }
+
+  }
+
+  .tableWrapper {
+    //margin: 40px;
+    background-color: lighten(#f2e3ff, 5%);
+
+    table {
+      box-shadow: 2px 2px 10px gray;
+      margin-bottom: 20px;
+
+      thead {
+        tr {
+          th {
+            font-weight: bold;
+            text-align: left;
+            border: none;
+            padding: 10px 10px 10px 0px;
+            background: #c384fa;
+            font-size: 14px;
+            border-left: 1px solid #c384fa;
+            border-right: 1px solid #c384fa;
+
+            &:first-child {
+              border-left: none;
+            }
+
+            &:last-child {
+              border-right: none;
+            }
+
+            //arrowButton for sort()
+            .arrowButton {
+              margin-right: 5px;
+              margin-left: 5px;
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 12px 5px 0 5px;
+              border-color: red transparent transparent transparent;
+
+              &:hover {
+                transition: 0.3s;
+                scale: 1.3;
+                cursor: pointer;
+              }
+            }
+
+            .arrowButtonRotated {
+              margin-right: 5px;
+              margin-left: 5px;
+              display: inline-block;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 12px 5px 0 5px;
+              border-color: #0ddb25 transparent transparent transparent;
+              transform: rotate(-180deg);
+
+              &:hover {
+                transition: 0.3s;
+                scale: 1.3;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          &:nth-child(even) {
+            background: #dbb3ff;
+          }
+
+          td {
+            text-align: left;
+            border-left: 1px solid #dbb3ff;
+            border-right: 1px solid #dbb3ff;
+            padding: 10px 15px;
+            font-size: 16px;
+            //font-weight: normal;
+            vertical-align: top;
+
+            &:first-child {
+              border-left: none;
+            }
+
+            &:last-child {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Buttons styles
+%regularButStyle {
+  //display: inline-block;
+  box-sizing: border-box;
+  padding: 0 25px;
+  margin: 15px 0 15px 0;
+  outline: none;
+  border: 1px solid #f9f2ff;
+  border-radius: 1px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #444;
+  background-color: lighten(#f2e3ff, 5%);
+  box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    transition: all 0.2s;
+    border: 1px solid #e8cfff;
+    background-color: #e8cfff;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+  }
+
+  &:focus-visible {
+    border: 1px solid #4c51f9;
+    outline: none;
+  }
+
+  &:active {
+    background-color: #808080;
+  }
+
+  &:disabled {
+    background-color: #eee;
+    border-color: #eee;
+    color: #444;
+    box-shadow: 0 7px 14px rgb(65 132 144 / 10%);
+    opacity: 55%;
+
+    &:hover {
+      cursor: default;
+      box-shadow: 0 7px 14px rgb(65 132 144 / 10%);
+    }
+  }
+}
+
+//selector and button styles
+.changeAmountRowTable {
+  display: grid;
+  grid-template-columns: 180px auto 180px;
+  //border: 1px solid green;
+  position: relative;
+
+  .buttonAddRow {
+    //border: 1px solid red;
+    float: left;
+    @extend %regularButStyle;
+  }
+
+  .buttonDeleteRow {
+    //border: 1px solid red;
+    float: right;
+    @extend %regularButStyle;
+  }
+
+  //Selector styles
+  .selectWrapper {
+    //border: 1px solid red;
+    position: relative;
+    max-width: 300px;
+    margin-left: 30px;
+    //Custom string
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      transform: translateY(-50%);
+
+      /*painting a triangle*/
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10.4px 6px 0 6px;
+      border-color: #ddd transparent transparent transparent;
+
+
+      /*on click*/
+      pointer-events: none;
+    }
+
+    select {
+      box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+      width: 100%;
+      //delete default string
+      appearance: none;
+      //delete border after hidden list
+      outline: none;
+      //background-color: transparent;
+      border: 1px solid #ddd;
+      padding: 15px 15px 15px 30px; //correction for right change string
+      margin: 15px 0 15px 0;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        //box-shadow: 1px 6px 14px red;
+      }
+
+      &::-ms-expand {
+        display: none; //for explorer
+      }
+    }
+  }
+}
+
+/*notifyBanner styles*/
+.notifyBannerBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 0px solid;
+}
+
+.notifyBanner {
+  width: 260px;
+  border: 0px solid;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 0 25px 0;
+  margin-bottom: 30px;
+  background-color: lightgrey;
+}
+
+//Preloader style
+.preloaderBlock {
+  border: 0px solid;
+  display: flex;
+  justify-content: center;
+}
