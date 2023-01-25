@@ -12,7 +12,7 @@ import {
 class TableCurrenciesContainer extends React.Component {
 
     componentDidMount() {
-        if (this.props.currenciesData && this.props.rowsData.length === 0)
+        if ((this.props.currenciesData) && this.props.rowsData.length === 0)
             this.props.setRowsDefaultAC(this.props.defaultRowsAmount)
     }
 

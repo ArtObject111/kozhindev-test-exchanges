@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+**List of used libraries**
+-axios@1.2.2 for sending get-request to the server;<br/>
+-redux@4.2.0 for storage BLL and FLUX realisation;<br/>
+-sass@1.57.1 for styles;<br/>
+-react-router-dom@6.6.2 for rending component elements;<br/>
+-react-select@5.7.0 for crreation of currency selector in convertor block component;<br/>
+
+**Application functionality:**
+1. Adding and deleting rows in a currencies table with opportunity a currency choice;
+2. Sort by all columns in currencies table;
+3. Search currency name and charcode in the table by iputed symbols in special field;
+4. Updating currency values after click on the button in the SPA head;
+5. Input of values and displaying their converted results in converter block;
+6. Inputed symbols autocorrection in converter-block;
+7. Saving current values are inputted into converter fields in local Storage for their displaying after reloading SPA;

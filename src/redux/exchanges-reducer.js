@@ -168,6 +168,7 @@ const exchangesReducer = (state = initialState, action) => {
                 isFetching: action.isFetching
             }
         case SET_DEFAULT_VALUES:
+            debugger
             let firstCurValue = state.currenciesData[action.firstId - 1].currencyValue
             localStorage.setItem("firstRateValue", JSON.stringify(firstCurValue))
             let secondCurValue = state.currenciesData[action.secondId - 1].currencyValue
