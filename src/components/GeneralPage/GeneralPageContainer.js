@@ -2,7 +2,7 @@ import React from "react";
 import GeneralPage from "./GeneralPage";
 import {connect} from "react-redux";
 import {compose} from "redux";
-import s from "./GeneralPage.module.css";
+import s from "./GeneralPage.module.scss";
 import Preloader from "../common/Preloader/Preloader";
 
 class GeneralPageContainer extends React.Component {
@@ -13,7 +13,9 @@ class GeneralPageContainer extends React.Component {
                 {!this.props.isFetching &&
                     <GeneralPage/>}
                 <div className={s.preloaderBlock}>
-                    {this.props.isFetching ? <Preloader/> : null}
+                    <div className={s.preloader}>
+                        {this.props.isFetching ? <Preloader/> : null}
+                    </div>
                 </div>
             </>
         )

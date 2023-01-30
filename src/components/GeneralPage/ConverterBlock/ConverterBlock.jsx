@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./ConverterBlock.module.scss"
 import Select from "react-select";
-import "./custom-select.scss"
+import "../../common/styles/custom-select.scss"
 
 const ConverterBlock = (props) => {
 
@@ -49,10 +49,12 @@ const ConverterBlock = (props) => {
             <form className={s.formBlock}>
                 <div className={s.upperCurrencyField}>
                     <div className={s.inputWrapper}>
-                        <input placeholder={"Значение валюты"}
-                               name={"currencyValue1"}
-                               value={props.firstResultInput}
-                               onChange={onCalculateCurrencyValue}
+                        <input
+                            autoComplete={"off"}
+                            placeholder={"Значение валюты"}
+                            name={"currencyValue1"}
+                            value={props.firstResultInput}
+                            onChange={onCalculateCurrencyValue}
                         />
                     </div>
                     <div>
@@ -70,10 +72,12 @@ const ConverterBlock = (props) => {
                 </div>
                 <div className={s.lowerCurrencyField}>
                     <div className={s.inputWrapper}>
-                        <input placeholder={"Значение валюты"}
-                               name={"currencyValue2"}
-                               value={props.secondResultInput}
-                               onChange={onCalculateCurrencyValue}
+                        <input
+                            autoComplete={"off"}
+                            placeholder={"Значение валюты"}
+                            name={"currencyValue2"}
+                            value={props.secondResultInput}
+                            onChange={onCalculateCurrencyValue}
                         />
                     </div>
                     <div>

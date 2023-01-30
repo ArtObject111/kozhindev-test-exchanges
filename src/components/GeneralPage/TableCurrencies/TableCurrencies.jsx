@@ -34,17 +34,17 @@ const TableCurrencies = (props) => {
     let sortButtonStyle = (field) => (!props.sortMode[field]) ? s.arrowButton : s.arrowButtonRotated
 
 
-    //rowsElements for table BEFORE SORT
+    //rowsElements for table
     let rowsElements = props.rowsData.map(row => {
-                return <tr key={row.id}>
-                    <td>{row.id}</td>
-                    <td>{row.currencyCode}</td>
-                    <td>{row.currencyName}</td>
-                    <td>{row.ratioToRUB}</td>
-                    <td>{row.ratioToUSD}</td>
-                    <td>{row.ratioToEUR}</td>
-                    <td>{row.ratioToCNY}</td>
-                </tr>
+            return <tr key={row.id}>
+                <td>{row.id}</td>
+                <td>{row.currencyCode}</td>
+                <td>{row.currencyName}</td>
+                <td>{row.ratioToRUB}</td>
+                <td>{row.ratioToUSD}</td>
+                <td>{row.ratioToEUR}</td>
+                <td>{row.ratioToCNY}</td>
+            </tr>
         }
     )
 
@@ -131,7 +131,8 @@ const TableCurrencies = (props) => {
                                         <select
                                             onChange={(event) => onAddRow(event)}>
                                             <option value={""} hidden={true}>
-                                                Нажмите, чтобы выбрать валюту</option>
+                                                Нажмите, чтобы выбрать валюту
+                                            </option>
                                             {optionElements}
                                         </select>
                                     </div>
@@ -163,8 +164,6 @@ const TableCurrencies = (props) => {
                             </div>
                         </div>
                     </div>
-                    {/*<span>* Код валюты указан в соответствии со стандартом
-            Международной организации по стандартизации (ISO 4217)</span>*/}
                 </div>
             </div>
         </>

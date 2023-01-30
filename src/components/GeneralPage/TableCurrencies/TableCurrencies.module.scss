@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  border: 0px solid greenyellow;
+  //border: 1px solid greenyellow;
 }
 
 .contentBlockWrapper {
@@ -10,19 +10,18 @@
   margin-top: 30px;
   padding: 0px;
   width: 80%;
-  //border: 1px solid blue;
+  //border: 1px solid white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  //background-color: #d993e6;
 }
 
 //new
 .tableBlock {
   background-color: #e8cfff;
   padding: 30px;
-  border: 1px solid;
+  border: 1px solid #e8cfff;
   border-radius: 40px;
 
   .findInputBlock {
