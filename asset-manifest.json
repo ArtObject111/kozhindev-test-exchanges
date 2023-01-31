@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/kozhindev-test-exchanges/static/css/main.0fef3510.css",
-    "main.js": "/kozhindev-test-exchanges/static/js/main.b2fc7a69.js",
+    "main.js": "/kozhindev-test-exchanges/static/js/main.7972a631.js",
     "static/js/787.8ad24250.chunk.js": "/kozhindev-test-exchanges/static/js/787.8ad24250.chunk.js",
     "static/media/grid.svg": "/kozhindev-test-exchanges/static/media/grid.3b72f448f3d9ad83bbd05e089b327fee.svg",
     "index.html": "/kozhindev-test-exchanges/index.html",
     "main.0fef3510.css.map": "/kozhindev-test-exchanges/static/css/main.0fef3510.css.map",
-    "main.b2fc7a69.js.map": "/kozhindev-test-exchanges/static/js/main.b2fc7a69.js.map",
+    "main.7972a631.js.map": "/kozhindev-test-exchanges/static/js/main.7972a631.js.map",
     "787.8ad24250.chunk.js.map": "/kozhindev-test-exchanges/static/js/787.8ad24250.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fef3510.css",
-    "static/js/main.b2fc7a69.js"
+    "static/js/main.7972a631.js"
   ]
 }
