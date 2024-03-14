@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kozhindev-test-exchanges/static/css/main.0fef3510.css",
-    "main.js": "/kozhindev-test-exchanges/static/js/main.7972a631.js",
+    "main.css": "/kozhindev-test-exchanges/static/css/main.fe33256f.css",
+    "main.js": "/kozhindev-test-exchanges/static/js/main.9a4f4726.js",
     "static/js/787.8ad24250.chunk.js": "/kozhindev-test-exchanges/static/js/787.8ad24250.chunk.js",
-    "static/media/grid.svg": "/kozhindev-test-exchanges/static/media/grid.3b72f448f3d9ad83bbd05e089b327fee.svg",
+    "static/media/grid.svg": "/kozhindev-test-exchanges/static/media/grid.abcc9665278f45fa51492c177ae44d86.svg",
     "index.html": "/kozhindev-test-exchanges/index.html",
-    "main.0fef3510.css.map": "/kozhindev-test-exchanges/static/css/main.0fef3510.css.map",
-    "main.7972a631.js.map": "/kozhindev-test-exchanges/static/js/main.7972a631.js.map",
+    "main.fe33256f.css.map": "/kozhindev-test-exchanges/static/css/main.fe33256f.css.map",
+    "main.9a4f4726.js.map": "/kozhindev-test-exchanges/static/js/main.9a4f4726.js.map",
     "787.8ad24250.chunk.js.map": "/kozhindev-test-exchanges/static/js/787.8ad24250.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fef3510.css",
-    "static/js/main.7972a631.js"
+    "static/css/main.fe33256f.css",
+    "static/js/main.9a4f4726.js"
   ]
 }
