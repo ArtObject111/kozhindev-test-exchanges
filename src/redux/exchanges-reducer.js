@@ -168,13 +168,14 @@ const exchangesReducer = (state = initialState, action) => {
                 isFetching: action.isFetching
             }
         case SET_DEFAULT_VALUES:
-            debugger
             let firstCurValue = state.currenciesData[action.firstId - 1].currencyValue
             localStorage.setItem("firstRateValue", JSON.stringify(firstCurValue))
             let secondCurValue = state.currenciesData[action.secondId - 1].currencyValue
             localStorage.setItem("secondRateValue", JSON.stringify(secondCurValue))
             let ratio = firstCurValue / secondCurValue
             let firstResultInput = state.formCurrentState.firstResultInput
+            const secondResultInput = checkCurForLowValue(ratio * firstResultInput)
+            localStorage.setItem("secondInput", JSON.stringify(secondResultInput))
             //if local storage empty, set default values else "false"
             localStorage.setItem("isLocalStorageFull", JSON.stringify(true))
             return {
@@ -185,7 +186,6 @@ const exchangesReducer = (state = initialState, action) => {
                     secondComparedId: action.secondId,
                     firstComparedValue: firstCurValue,
                     secondComparedValue: secondCurValue,
-                    //firstResultInput: checkCurForLowValue(firstCurValue / secondCurValue),
                     secondResultInput: checkCurForLowValue(ratio * firstResultInput)
                 }
             }
